@@ -77,17 +77,8 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun BottomNavBar(navController: NavHostController, items: List<BottomNavItem>) {
-    val poppinsRegular = FontFamily(
-        Font(R.font.poppins, weight = FontWeight.Normal),
-    )
     val poppinsMedium = FontFamily(
         Font(R.font.poppins_medium, weight = FontWeight.Medium),
-    )
-    val poppinsSemiBold = FontFamily(
-        Font(R.font.poppins_semibold, weight = FontWeight.SemiBold),
-    )
-    val poppinsBold = FontFamily(
-        Font(R.font.poppins_bold, weight = FontWeight.Bold),
     )
     val navBackStackEntry by navController.currentBackStackEntryAsState()
     val currentRoute = navBackStackEntry?.destination?.route
